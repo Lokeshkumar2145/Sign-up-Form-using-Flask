@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="prac.css">
+    <title>prac    </title>
+</head>
+<body>
+    <div class="regform"> <!-- .-->
+        <form action="">
+        <h3>sign up</h3>
+
+        <div class="input">
+        <label class="lbl" for="name"> USER NAME</label>
+        <input type="text" id="name" name="name">
+        </div>
+
+        <div class="input">
+            <label class="lbl" for="email">EMAIL</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="input">
+            <label  class="lbl" for="pwd"> PASSWORD</label>
+            <input type="text" id="pwd" name="pwd">
+        </div >
+        <div class="radio">
+            <input type="radio" name="gender" id="male">
+            <label for="male"> Male</label>
+            <input type="radio"  name="gender" id="female">
+            <label for="female">Female</label>
+        </div>
+        <div class="btn">
+            <button type="submit">Register</button>
+        </div>
+        </form>
+        {% if message %}
+      {{ message }}
+        {% endif %}
+    </div>
+</body>
+</html>
